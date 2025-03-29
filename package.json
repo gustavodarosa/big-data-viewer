@@ -1,0 +1,32 @@
+{
+  "name": "big-data-viewer",
+  "version": "1.0.0",
+  "description": "A web application for viewing and processing large data files (CSV, JSON, TXT) efficiently using lazy loading, web workers, and streams.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "big data",
+    "lazy loading",
+    "web workers",
+    "streams",
+    "file viewer"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/yourusername/big-data-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/big-data-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/big-data-viewer/issues"
+  }
+}
