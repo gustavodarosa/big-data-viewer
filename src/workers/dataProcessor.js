@@ -1,10 +1,11 @@
-self.onmessage = function(event) {
-    const { data } = event;
+onmessage = function(event) {
+    const data = event.data; // Dados recebidos (pode ser uma linha ou conjunto de linhas)
     
-    if (data.action === 'processData') {
-        const processedData = processData(data.payload);
-        self.postMessage({ action: 'dataProcessed', payload: processedData });
-    }
+    // Realize o processamento necessário, como validação, formatação, etc.
+    const processedData = data.trim().toUpperCase(); // Exemplo de processamento simples
+    
+    // Envia de volta o resultado processado
+    postMessage(processedData);
 };
 
 function processData(data) {
